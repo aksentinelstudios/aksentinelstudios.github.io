@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AK Sentinel Studios</title>
+  <title>AK Sentinel Studios | Secure • Intelligent • Digital</title>
 
   <meta name="description"
-        content="AK Sentinel Studios develops cybersecurity, artificial intelligence and secure software solutions.">
+        content="AK Sentinel Studios develops cybersecurity, artificial intelligence, secure software and digital technology solutions.">
 
   <style>
     * {
@@ -31,7 +31,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(7,17,31,0.95);
+      background: rgba(7,17,31,0.94);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid #1d3047;
       padding: 18px 6%;
     }
@@ -59,6 +60,7 @@
       text-decoration: none;
       margin-left: 24px;
       font-size: 14px;
+      transition: 0.2s;
     }
 
     nav a:hover {
@@ -108,6 +110,14 @@
       text-decoration: none;
       font-weight: bold;
       margin-right: 10px;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #28a9f5;
+      transform: translateY(-2px);
     }
 
     .button.secondary {
@@ -143,6 +153,13 @@
       border: 1px solid #1c334c;
       border-radius: 12px;
       padding: 28px;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #299ddd;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
     }
 
     .card h3 {
@@ -166,6 +183,211 @@
       padding: 0 6%;
     }
 
+    /* SOLUTION FINDER */
+
+    .finder {
+      background:
+        radial-gradient(circle at top right, rgba(40,170,255,0.10), transparent 35%),
+        #0a1727;
+      border-top: 1px solid #1d3047;
+      border-bottom: 1px solid #1d3047;
+    }
+
+    .finder-box {
+      max-width: 900px;
+      margin: auto;
+      background: #0c1b2d;
+      border: 1px solid #234663;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    }
+
+    .finder-label {
+      display: block;
+      color: #dce8f5;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 130px;
+      resize: vertical;
+      padding: 16px;
+      border-radius: 10px;
+      border: 1px solid #31506c;
+      background: #07111f;
+      color: white;
+      font-size: 16px;
+      outline: none;
+      font-family: inherit;
+    }
+
+    textarea:focus {
+      border-color: #39b9ff;
+      box-shadow: 0 0 0 3px rgba(57,185,255,0.1);
+    }
+
+    .examples {
+      margin: 15px 0 22px;
+      color: #8196ab;
+      font-size: 13px;
+    }
+
+    .example {
+      display: inline-block;
+      border: 1px solid #29445d;
+      border-radius: 20px;
+      padding: 6px 11px;
+      margin: 4px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .example:hover {
+      border-color: #39b9ff;
+      color: #39b9ff;
+    }
+
+    .finder-result {
+      display: none;
+      margin-top: 25px;
+      padding: 25px;
+      border-radius: 12px;
+      background: #071827;
+      border: 1px solid #24516e;
+      animation: appear 0.35s ease;
+    }
+
+    .finder-result.show {
+      display: block;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 15px;
+      background: rgba(57,185,255,0.1);
+      border: 1px solid #276083;
+      color: #61c8ff;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .result-title {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .result-text {
+      color: #aebdce;
+      margin-bottom: 15px;
+    }
+
+    .solution-area {
+      color: #4fc2ff;
+      font-weight: bold;
+    }
+
+    .notice {
+      color: #71879c;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* MODAL */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.72);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      width: 100%;
+      max-width: 600px;
+      background: #0c1b2d;
+      border: 1px solid #31516d;
+      border-radius: 18px;
+      padding: 35px;
+      position: relative;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      animation: modalIn 0.25s ease;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      border: none;
+      background: none;
+      color: #9eb0c2;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: white;
+    }
+
+    .modal-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: rgba(21,151,229,0.15);
+      border: 1px solid #2d78a3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #39b9ff;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .modal h2 {
+      margin-bottom: 12px;
+    }
+
+    .modal p {
+      color: #aebdce;
+      margin-bottom: 22px;
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
     .contact-box {
       background: #0c1b2d;
       border: 1px solid #1c334c;
@@ -182,6 +404,7 @@
     }
 
     @media (max-width: 700px) {
+
       nav a {
         display: none;
       }
@@ -193,6 +416,14 @@
       .hero p {
         font-size: 17px;
       }
+
+      .finder-box {
+        padding: 25px 20px;
+      }
+
+      .button {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -201,20 +432,31 @@
 
 <header>
   <nav>
-    <div class="logo">AK <span>Sentinel Studios</span></div>
+
+    <div class="logo">
+      AK <span>Sentinel Studios</span>
+    </div>
 
     <div>
       <a href="#about">About</a>
       <a href="#solutions">Solutions</a>
+      <a href="#finder">Find a Solution</a>
       <a href="#contact">Contact</a>
     </div>
+
   </nav>
 </header>
 
+
 <main>
 
+  <!-- HERO -->
+
   <section class="hero">
-    <div class="tag">SECURE • INTELLIGENT • DIGITAL</div>
+
+    <div class="tag">
+      SECURE • INTELLIGENT • DIGITAL
+    </div>
 
     <h1>
       Building technology for a
@@ -227,13 +469,24 @@
       and secure digital solutions.
     </p>
 
-    <a class="button" href="#solutions">Explore Solutions</a>
-    <a class="button secondary" href="#contact">Contact</a>
+    <button class="button" onclick="openFinder()">
+      Explore Solutions
+    </button>
+
+    <a class="button secondary" href="#contact">
+      Contact
+    </a>
+
   </section>
 
 
+  <!-- TECHNOLOGY -->
+
   <section id="solutions">
-    <h2 class="section-title">Our Technology Focus</h2>
+
+    <h2 class="section-title">
+      Our Technology Focus
+    </h2>
 
     <p class="section-text">
       We develop security-focused software and technology products
@@ -276,17 +529,108 @@
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- INTERACTIVE SOLUTION FINDER -->
+
+  <section id="finder" class="finder">
+
+    <div class="finder-box">
+
+      <h2 class="section-title">
+        Tell Us What You Need
+      </h2>
+
+      <p class="section-text">
+        Describe a technology, cybersecurity, software, or
+        organizational problem. AK Sentinel Studios will identify
+        the most relevant solution area.
+      </p>
+
+      <label class="finder-label">
+        Describe your problem or requirement
+      </label>
+
+      <textarea
+        id="problemInput"
+        placeholder="Example: One of our employee accounts has been hacked..."
+      ></textarea>
+
+      <div class="examples">
+
+        Try an example:
+
+        <span class="example"
+          onclick="setExample('One of our employee accounts has been hacked and we need help securing it.')">
+          Account hacked
+        </span>
+
+        <span class="example"
+          onclick="setExample('We need an HRMS system for our company and employees.')">
+          HRMS needed
+        </span>
+
+        <span class="example"
+          onclick="setExample('We need protection for our company network and applications.')">
+          Network security
+        </span>
+
+        <span class="example"
+          onclick="setExample('We want to build an AI system for our organization.')">
+          AI solution
+        </span>
+
+      </div>
+
+      <button class="button" onclick="findSolution()">
+        Find Relevant Solution
+      </button>
+
+
+      <div id="finderResult" class="finder-result">
+
+        <div class="status">
+          REQUEST RECEIVED
+        </div>
+
+        <h3 class="result-title" id="resultTitle">
+          Solution identified
+        </h3>
+
+        <p class="result-text" id="resultText"></p>
+
+        <div class="solution-area" id="solutionArea"></div>
+
+        <p class="notice">
+          This is an automated website acknowledgement.
+          It does not create a support ticket or guarantee
+          product availability. Our relevant solution areas
+          are currently under development.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
   <div class="about">
+
     <section id="about">
-      <h2 class="section-title">About AK Sentinel Studios</h2>
+
+      <h2 class="section-title">
+        About AK Sentinel Studios
+      </h2>
 
       <p class="section-text">
         AK Sentinel Studios is an independent technology studio
-        developing cybersecurity, artificial intelligence, software
-        development, and secure digital solutions.
+        developing cybersecurity, artificial intelligence,
+        software development, and secure digital solutions.
       </p>
 
       <p class="section-text">
@@ -294,14 +638,22 @@
         software engineering, security research, and intelligent
         systems to address evolving digital challenges.
       </p>
+
     </section>
+
   </div>
 
 
+  <!-- CONTACT -->
+
   <section id="contact">
-    <h2 class="section-title">Let's Connect</h2>
+
+    <h2 class="section-title">
+      Let's Connect
+    </h2>
 
     <div class="contact-box">
+
       <p class="section-text">
         For information about AK Sentinel Studios, our technology,
         products, or potential collaboration, please get in touch
@@ -309,17 +661,310 @@
       </p>
 
       <a class="button"
-         href="https://github.com/aksentinelstudios">
-         GitHub
+         href="https://github.com/aksentinelstudios"
+         target="_blank">
+        GitHub
       </a>
+
     </div>
+
   </section>
 
 </main>
 
+
 <footer>
   © 2026 AK Sentinel Studios. All rights reserved.
 </footer>
+
+
+<!-- MODAL -->
+
+<div id="solutionModal" class="modal">
+
+  <div class="modal-content">
+
+    <button class="close" onclick="closeModal()">
+      ×
+    </button>
+
+    <div class="modal-icon">
+      ✓
+    </div>
+
+    <h2>
+      Explore AK Sentinel Solutions
+    </h2>
+
+    <p>
+      Tell us about the technology or business problem
+      you are trying to solve. Our solution finder will
+      identify the most relevant AK Sentinel Studios
+      technology area.
+    </p>
+
+    <button class="button" onclick="closeModal(); scrollToFinder();">
+      Describe Your Problem
+    </button>
+
+  </div>
+
+</div>
+
+
+<script>
+
+  /* -----------------------------
+     OPEN SOLUTION FINDER
+  ----------------------------- */
+
+  function openFinder() {
+
+    document.getElementById("solutionModal")
+      .classList.add("active");
+
+  }
+
+
+  function closeModal() {
+
+    document.getElementById("solutionModal")
+      .classList.remove("active");
+
+  }
+
+
+  function scrollToFinder() {
+
+    document.getElementById("finder")
+      .scrollIntoView({
+        behavior: "smooth"
+      });
+
+  }
+
+
+  /* -----------------------------
+     EXAMPLE PROBLEMS
+  ----------------------------- */
+
+  function setExample(text) {
+
+    document.getElementById("problemInput").value = text;
+
+    document.getElementById("problemInput").focus();
+
+  }
+
+
+  /* -----------------------------
+     SOLUTION ENGINE
+  ----------------------------- */
+
+  function findSolution() {
+
+    const input =
+      document.getElementById("problemInput")
+      .value
+      .trim()
+      .toLowerCase();
+
+    const result =
+      document.getElementById("finderResult");
+
+    const title =
+      document.getElementById("resultTitle");
+
+    const text =
+      document.getElementById("resultText");
+
+    const area =
+      document.getElementById("solutionArea");
+
+
+    if (!input) {
+
+      title.textContent =
+        "Please describe your requirement";
+
+      text.textContent =
+        "Tell us what problem you are trying to solve and we will identify the most relevant technology area.";
+
+      area.textContent = "";
+
+      result.classList.add("show");
+
+      return;
+    }
+
+
+    /* CYBERSECURITY / HACKED ACCOUNT */
+
+    if (
+      input.includes("hack") ||
+      input.includes("hacked") ||
+      input.includes("breach") ||
+      input.includes("attack") ||
+      input.includes("malware") ||
+      input.includes("phishing") ||
+      input.includes("ransomware") ||
+      input.includes("stolen account")
+    ) {
+
+      title.textContent =
+        "Your cybersecurity requirement has been identified.";
+
+      text.textContent =
+        "The requirement appears to involve account security, incident response, or protection against a cyber threat. We are developing security-focused technologies for these types of organizational problems.";
+
+      area.textContent =
+        "Relevant solution area: Cybersecurity & Threat Protection";
+
+    }
+
+
+    /* HRMS */
+
+    else if (
+      input.includes("hrms") ||
+      input.includes("human resource") ||
+      input.includes("employee management") ||
+      input.includes("payroll") ||
+      input.includes("employees")
+    ) {
+
+      title.textContent =
+        "Your workforce-management requirement has been identified.";
+
+      text.textContent =
+        "The requirement appears to involve employee, HR, workforce, or organizational management. A relevant enterprise software solution could be developed around this requirement.";
+
+      area.textContent =
+        "Relevant solution area: Enterprise HRMS & Workforce Management";
+
+    }
+
+
+    /* NETWORK SECURITY */
+
+    else if (
+      input.includes("network") ||
+      input.includes("firewall") ||
+      input.includes("server security") ||
+      input.includes("infrastructure") ||
+      input.includes("zero trust")
+    ) {
+
+      title.textContent =
+        "Your infrastructure security requirement has been identified.";
+
+      text.textContent =
+        "The requirement appears to involve protection of networks, servers, applications, or organizational infrastructure.";
+
+      area.textContent =
+        "Relevant solution area: Network & Infrastructure Security";
+
+    }
+
+
+    /* AI */
+
+    else if (
+      input.includes("ai") ||
+      input.includes("artificial intelligence") ||
+      input.includes("machine learning") ||
+      input.includes("automation") ||
+      input.includes("llm")
+    ) {
+
+      title.textContent =
+        "Your AI requirement has been identified.";
+
+      text.textContent =
+        "The requirement appears to involve artificial intelligence, automation, intelligent systems, or machine learning.";
+
+      area.textContent =
+        "Relevant solution area: Artificial Intelligence & Intelligent Systems";
+
+    }
+
+
+    /* SOFTWARE */
+
+    else if (
+      input.includes("software") ||
+      input.includes("application") ||
+      input.includes("app") ||
+      input.includes("saas") ||
+      input.includes("platform")
+    ) {
+
+      title.textContent =
+        "Your software requirement has been identified.";
+
+      text.textContent =
+        "The requirement appears to involve development of a software application, platform, or SaaS product.";
+
+      area.textContent =
+        "Relevant solution area: Secure Software & SaaS Development";
+
+    }
+
+
+    /* DEFAULT */
+
+    else {
+
+      title.textContent =
+        "Your requirement has been received.";
+
+      text.textContent =
+        "We have identified your request as a potential technology requirement. AK Sentinel Studios is continuously developing new cybersecurity, AI, software, and digital solutions.";
+
+      area.textContent =
+        "Relevant solution area: Technology Research & Development";
+
+    }
+
+
+    result.classList.add("show");
+
+    result.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+  }
+
+
+  /* -----------------------------
+     CLOSE MODAL WHEN CLICKING
+     OUTSIDE IT
+  ----------------------------- */
+
+  document.getElementById("solutionModal")
+    .addEventListener("click", function(event) {
+
+      if (event.target === this) {
+        closeModal();
+      }
+
+    });
+
+
+  /* -----------------------------
+     ESC KEY
+  ----------------------------- */
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+      closeModal();
+    }
+
+  });
+
+</script>
 
 </body>
 </html>
