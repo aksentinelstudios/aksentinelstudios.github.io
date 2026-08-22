@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>AK Sentinel Studios | Future of Secure Technology</title>
+<title>
+AK Sentinel Studios | Future of Secure Technology
+</title>
 
-<meta name="description"
-content="AK Sentinel Studios develops cybersecurity, artificial intelligence, custom software and secure digital solutions.">
+<meta
+name="description"
+content="AK Sentinel Studios develops cybersecurity, artificial intelligence, custom software and secure digital solutions."
+>
+
+<meta
+name="theme-color"
+content="#030712"
+>
 
 <style>
 
@@ -18,40 +29,67 @@ content="AK Sentinel Studios develops cybersecurity, artificial intelligence, cu
 ========================================================= */
 
 :root {
+
     --bg: #030712;
+
     --bg2: #07111f;
-    --panel: rgba(10, 22, 39, 0.72);
-    --border: rgba(74, 180, 255, 0.22);
 
-    --cyan: #38c8ff;
-    --blue: #1677ff;
-    --purple: #9b5cff;
-    --green: #42f5a7;
+    --panel:
+        rgba(10, 22, 39, 0.72);
 
-    --text: #f4f8ff;
-    --muted: #94a8bd;
+    --border:
+        rgba(74, 180, 255, 0.22);
+
+    --cyan:
+        #38c8ff;
+
+    --blue:
+        #1677ff;
+
+    --purple:
+        #9b5cff;
+
+    --green:
+        #42f5a7;
+
+    --text:
+        #f4f8ff;
+
+    --muted:
+        #94a8bd;
+
 }
 
 * {
+
     box-sizing: border-box;
+
     margin: 0;
+
     padding: 0;
+
 }
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 body {
+
     background:
+
         radial-gradient(
             circle at 50% -10%,
             rgba(34, 125, 255, 0.18),
             transparent 35%
         ),
+
         var(--bg);
 
-    color: var(--text);
+    color:
+        var(--text);
 
     font-family:
         Inter,
@@ -61,7 +99,21 @@ body {
         "Segoe UI",
         sans-serif;
 
-    overflow-x: hidden;
+    overflow-x:
+        hidden;
+
+    line-height:
+        1.6;
+
+}
+
+button,
+input,
+textarea {
+
+    font-family:
+        inherit;
+
 }
 
 
@@ -70,26 +122,40 @@ body {
 ========================================================= */
 
 #network {
-    position: fixed;
-    inset: 0;
 
-    width: 100%;
-    height: 100%;
+    position:
+        fixed;
 
-    z-index: -5;
+    inset:
+        0;
 
-    opacity: 0.55;
+    width:
+        100%;
+
+    height:
+        100%;
+
+    z-index:
+        -5;
+
+    opacity:
+        0.55;
+
 }
 
 .grid-background {
 
-    position: fixed;
+    position:
+        fixed;
 
-    inset: 0;
+    inset:
+        0;
 
-    z-index: -4;
+    z-index:
+        -4;
 
-    pointer-events: none;
+    pointer-events:
+        none;
 
     background-image:
 
@@ -104,7 +170,8 @@ body {
             transparent 1px
         );
 
-    background-size: 50px 50px;
+    background-size:
+        50px 50px;
 
     mask-image:
         linear-gradient(
@@ -115,16 +182,23 @@ body {
 
     animation:
         gridMove 18s linear infinite;
+
 }
 
 @keyframes gridMove {
 
     from {
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
+
     }
 
     to {
-        transform: translateY(50px);
+
+        transform:
+            translateY(50px);
+
     }
 
 }
@@ -136,15 +210,23 @@ body {
 
 header {
 
-    position: fixed;
+    position:
+        fixed;
 
-    top: 0;
-    left: 0;
-    right: 0;
+    top:
+        0;
 
-    z-index: 100;
+    left:
+        0;
 
-    padding: 18px 5%;
+    right:
+        0;
+
+    z-index:
+        100;
+
+    padding:
+        18px 5%;
 
     background:
         rgba(3, 7, 18, 0.72);
@@ -153,60 +235,86 @@ header {
         blur(18px);
 
     border-bottom:
-        1px solid rgba(255,255,255,0.06);
+        1px solid
+        rgba(255,255,255,0.06);
+
 }
 
 nav {
 
-    max-width: 1250px;
+    max-width:
+        1250px;
 
-    margin: auto;
+    margin:
+        auto;
 
-    display: flex;
+    display:
+        flex;
 
-    justify-content: space-between;
+    justify-content:
+        space-between;
 
-    align-items: center;
+    align-items:
+        center;
+
 }
 
 .logo {
 
-    font-size: 20px;
+    font-size:
+        20px;
 
-    font-weight: 800;
+    font-weight:
+        800;
 
-    letter-spacing: 1px;
+    letter-spacing:
+        1px;
 
-    text-decoration: none;
+    text-decoration:
+        none;
 
-    color: white;
+    color:
+        white;
+
 }
 
 .logo span {
-    color: var(--cyan);
+
+    color:
+        var(--cyan);
+
 }
 
 .nav-links {
 
-    display: flex;
+    display:
+        flex;
 
-    gap: 28px;
+    gap:
+        28px;
+
 }
 
 .nav-links a {
 
-    color: #aebfd1;
+    color:
+        #aebfd1;
 
-    text-decoration: none;
+    text-decoration:
+        none;
 
-    font-size: 14px;
+    font-size:
+        14px;
 
-    transition: .3s;
+    transition:
+        .3s;
+
 }
 
 .nav-links a:hover {
 
-    color: var(--cyan);
+    color:
+        var(--cyan);
 
 }
 
@@ -217,82 +325,122 @@ nav {
 
 .hero {
 
-    min-height: 100vh;
+    min-height:
+        100vh;
 
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    justify-content: center;
+    justify-content:
+        center;
 
-    text-align: center;
+    text-align:
+        center;
 
-    padding: 130px 6% 80px;
+    padding:
+        130px 6% 80px;
 
-    position: relative;
+    position:
+        relative;
+
 }
 
 .hero-content {
 
-    max-width: 950px;
+    max-width:
+        950px;
 
-    margin: auto;
+    margin:
+        auto;
+
 }
 
 .status {
 
-    display: inline-flex;
+    display:
+        inline-flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 8px;
+    gap:
+        8px;
 
-    padding: 8px 15px;
+    padding:
+        8px 15px;
 
-    border: 1px solid
+    border:
+        1px solid
         rgba(56,200,255,.28);
 
-    border-radius: 50px;
+    border-radius:
+        50px;
 
     background:
         rgba(56,200,255,.06);
 
-    color: var(--cyan);
+    color:
+        var(--cyan);
 
-    font-size: 12px;
+    font-size:
+        12px;
 
-    letter-spacing: 1.5px;
+    letter-spacing:
+        1.5px;
 
-    margin-bottom: 25px;
+    margin-bottom:
+        25px;
+
 }
 
 .status-dot {
 
-    width: 7px;
-    height: 7px;
+    width:
+        7px;
 
-    border-radius: 50%;
+    height:
+        7px;
 
-    background: var(--green);
+    border-radius:
+        50%;
+
+    background:
+        var(--green);
 
     box-shadow:
-        0 0 15px var(--green);
+        0 0 15px
+        var(--green);
 
     animation:
         pulse 1.5s infinite;
+
 }
 
 @keyframes pulse {
 
     0%,100% {
-        transform: scale(1);
-        opacity: 1;
+
+        transform:
+            scale(1);
+
+        opacity:
+            1;
+
     }
 
     50% {
-        transform: scale(1.6);
-        opacity: .5;
+
+        transform:
+            scale(1.6);
+
+        opacity:
+            .5;
+
     }
+
 }
 
 .hero h1 {
@@ -300,16 +448,21 @@ nav {
     font-size:
         clamp(45px, 8vw, 90px);
 
-    line-height: 1;
+    line-height:
+        1;
 
-    letter-spacing: -4px;
+    letter-spacing:
+        -4px;
 
-    margin-bottom: 30px;
+    margin-bottom:
+        30px;
+
 }
 
 .gradient {
 
     background:
+
         linear-gradient(
             90deg,
             var(--cyan),
@@ -318,41 +471,61 @@ nav {
             var(--cyan)
         );
 
-    background-size: 300%;
+    background-size:
+        300%;
 
-    -webkit-background-clip: text;
+    -webkit-background-clip:
+        text;
 
-    color: transparent;
+    background-clip:
+        text;
+
+    color:
+        transparent;
 
     animation:
         gradientMove 7s linear infinite;
+
 }
 
 @keyframes gradientMove {
 
     0% {
-        background-position: 0%;
+
+        background-position:
+            0%;
+
     }
 
     100% {
-        background-position: 300%;
+
+        background-position:
+            300%;
+
     }
 
 }
 
 .hero p {
 
-    max-width: 720px;
+    max-width:
+        720px;
 
-    margin: auto;
+    margin:
+        auto;
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
-    font-size: 19px;
+    font-size:
+        19px;
 
-    line-height: 1.8;
+    line-height:
+        1.8;
 
-    margin-bottom: 35px;
+    margin-bottom:
+        35px;
+
 }
 
 
@@ -362,39 +535,52 @@ nav {
 
 .button {
 
-    display: inline-flex;
+    display:
+        inline-flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    justify-content: center;
+    justify-content:
+        center;
 
-    padding: 14px 24px;
+    padding:
+        14px 24px;
 
-    border-radius: 10px;
+    border-radius:
+        10px;
 
-    border: 1px solid
+    border:
+        1px solid
         rgba(56,200,255,.4);
 
     background:
+
         linear-gradient(
             135deg,
             #168cff,
             #1258d6
         );
 
-    color: white;
+    color:
+        white;
 
-    text-decoration: none;
+    text-decoration:
+        none;
 
-    font-weight: 700;
+    font-weight:
+        700;
 
-    cursor: pointer;
+    cursor:
+        pointer;
 
-    transition: .3s;
+    transition:
+        .3s;
 
     box-shadow:
         0 0 25px
         rgba(22,140,255,.15);
+
 }
 
 .button:hover {
@@ -405,6 +591,7 @@ nav {
     box-shadow:
         0 0 35px
         rgba(56,200,255,.35);
+
 }
 
 .button.secondary {
@@ -412,7 +599,22 @@ nav {
     background:
         rgba(255,255,255,.03);
 
-    margin-left: 8px;
+    margin-left:
+        8px;
+
+}
+
+.button:disabled {
+
+    opacity:
+        .65;
+
+    cursor:
+        wait;
+
+    transform:
+        none;
+
 }
 
 
@@ -422,24 +624,34 @@ nav {
 
 section {
 
-    max-width: 1250px;
+    max-width:
+        1250px;
 
-    margin: auto;
+    margin:
+        auto;
 
-    padding: 100px 6%;
+    padding:
+        100px 6%;
+
 }
 
 .section-label {
 
-    color: var(--cyan);
+    color:
+        var(--cyan);
 
-    font-size: 12px;
+    font-size:
+        12px;
 
-    letter-spacing: 2px;
+    letter-spacing:
+        2px;
 
-    text-transform: uppercase;
+    text-transform:
+        uppercase;
 
-    margin-bottom: 12px;
+    margin-bottom:
+        12px;
+
 }
 
 .section-title {
@@ -447,18 +659,25 @@ section {
     font-size:
         clamp(32px, 5vw, 55px);
 
-    margin-bottom: 18px;
+    margin-bottom:
+        18px;
+
 }
 
 .section-description {
 
-    max-width: 700px;
+    max-width:
+        700px;
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
-    margin-bottom: 45px;
+    margin-bottom:
+        45px;
 
-    line-height: 1.8;
+    line-height:
+        1.8;
+
 }
 
 
@@ -468,27 +687,36 @@ section {
 
 .solutions {
 
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         repeat(4, 1fr);
 
-    gap: 18px;
+    gap:
+        18px;
+
 }
 
 .solution {
 
-    position: relative;
+    position:
+        relative;
 
-    min-height: 320px;
+    min-height:
+        320px;
 
-    padding: 28px;
+    padding:
+        28px;
 
-    overflow: hidden;
+    overflow:
+        hidden;
 
-    border-radius: 20px;
+    border-radius:
+        20px;
 
     background:
+
         linear-gradient(
             145deg,
             rgba(13,30,50,.85),
@@ -496,14 +724,17 @@ section {
         );
 
     border:
-        1px solid var(--border);
+        1px solid
+        var(--border);
 
-    cursor: pointer;
+    cursor:
+        pointer;
 
     transition:
         transform .4s,
         border-color .4s,
         box-shadow .4s;
+
 }
 
 .solution:hover {
@@ -515,63 +746,80 @@ section {
         rgba(56,200,255,.65);
 
     box-shadow:
+
         0 25px 60px
         rgba(0,0,0,.35),
+
         0 0 35px
         rgba(56,200,255,.08);
+
 }
-
-
-/* animated light */
 
 .solution::before {
 
-    content: "";
+    content:
+        "";
 
-    position: absolute;
+    position:
+        absolute;
 
-    width: 180px;
+    width:
+        180px;
 
-    height: 180px;
+    height:
+        180px;
 
-    border-radius: 50%;
+    border-radius:
+        50%;
 
     background:
+
         radial-gradient(
             circle,
             rgba(56,200,255,.18),
             transparent 70%
         );
 
-    top: -70px;
+    top:
+        -70px;
 
-    right: -70px;
+    right:
+        -70px;
 
-    transition: .5s;
+    transition:
+        .5s;
+
 }
 
 .solution:hover::before {
 
     transform:
         scale(1.5);
-}
 
+}
 
 .solution-icon {
 
-    width: 65px;
+    width:
+        65px;
 
-    height: 65px;
+    height:
+        65px;
 
-    border-radius: 16px;
+    border-radius:
+        16px;
 
-    display: grid;
+    display:
+        grid;
 
-    place-items: center;
+    place-items:
+        center;
 
-    font-size: 30px;
+    font-size:
+        30px;
 
-    margin-bottom: 25px;
+    margin-bottom:
+        25px;
 
     background:
         rgba(56,200,255,.08);
@@ -582,64 +830,90 @@ section {
 
     animation:
         iconFloat 4s ease-in-out infinite;
+
 }
 
 @keyframes iconFloat {
 
     0%,100% {
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
+
     }
 
     50% {
-        transform: translateY(-7px);
+
+        transform:
+            translateY(-7px);
+
     }
+
 }
 
 .solution h3 {
 
-    font-size: 21px;
+    font-size:
+        21px;
 
-    margin-bottom: 12px;
+    margin-bottom:
+        12px;
+
 }
 
 .solution p {
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
-    font-size: 14px;
+    font-size:
+        14px;
 
-    line-height: 1.7;
+    line-height:
+        1.7;
+
 }
 
 .learn {
 
-    position: absolute;
+    position:
+        absolute;
 
-    bottom: 25px;
+    bottom:
+        25px;
 
-    color: var(--cyan);
+    color:
+        var(--cyan);
 
-    font-size: 13px;
+    font-size:
+        13px;
+
 }
 
 
 /* =========================================================
-   QUERY SECTION
+   REAL REQUIREMENT / QUERY FORM
 ========================================================= */
 
 .query-box {
 
-    position: relative;
+    position:
+        relative;
 
-    max-width: 900px;
+    max-width:
+        900px;
 
-    margin: auto;
+    margin:
+        auto;
 
-    padding: 35px;
+    padding:
+        35px;
 
-    border-radius: 25px;
+    border-radius:
+        25px;
 
     background:
+
         linear-gradient(
             145deg,
             rgba(12,28,48,.9),
@@ -653,119 +927,253 @@ section {
     box-shadow:
         0 30px 80px
         rgba(0,0,0,.35);
+
 }
 
-.query-input {
+.query-intro {
 
-    display: flex;
+    color:
+        var(--muted);
 
-    gap: 10px;
+    line-height:
+        1.8;
 
-    padding: 8px;
+    margin-bottom:
+        25px;
+
+}
+
+.query-form {
+
+    display:
+        grid;
+
+    gap:
+        18px;
+
+}
+
+.form-group {
+
+    display:
+        grid;
+
+    gap:
+        8px;
+
+}
+
+.form-group label {
+
+    color:
+        #cbd7e6;
+
+    font-size:
+        14px;
+
+    font-weight:
+        600;
+
+}
+
+.form-group label span {
+
+    color:
+        #6f8499;
+
+    font-weight:
+        normal;
+
+}
+
+.form-control {
+
+    width:
+        100%;
+
+    padding:
+        14px 15px;
+
+    border-radius:
+        11px;
+
+    border:
+        1px solid
+        rgba(56,200,255,.18);
 
     background:
         #050d18;
 
-    border:
-        1px solid
-        rgba(255,255,255,.08);
+    color:
+        white;
 
-    border-radius: 14px;
+    outline:
+        none;
+
+    font-size:
+        15px;
+
+    transition:
+        border-color .25s,
+        box-shadow .25s;
+
 }
 
-.query-input input {
+.form-control::placeholder {
 
-    flex: 1;
+    color:
+        #60758b;
 
-    min-width: 0;
-
-    background: transparent;
-
-    border: none;
-
-    outline: none;
-
-    color: white;
-
-    padding: 12px;
-
-    font-size: 15px;
 }
 
-.query-result {
+.form-control:focus {
 
-    margin-top: 25px;
+    border-color:
+        var(--cyan);
 
-    min-height: 70px;
+    box-shadow:
+        0 0 0 3px
+        rgba(56,200,255,.08);
 
-    display: none;
+}
 
-    padding: 20px;
+textarea.form-control {
 
-    border-radius: 14px;
+    min-height:
+        160px;
+
+    resize:
+        vertical;
+
+}
+
+.query-submit {
+
+    width:
+        100%;
+
+    margin-top:
+        5px;
+
+}
+
+.form-note {
+
+    color:
+        #6f8499;
+
+    font-size:
+        12px;
+
+    line-height:
+        1.6;
+
+}
+
+.query-status {
+
+    display:
+        none;
+
+    margin-top:
+        20px;
+
+    padding:
+        18px;
+
+    border-radius:
+        14px;
 
     background:
         rgba(66,245,167,.05);
 
     border:
         1px solid
-        rgba(66,245,167,.18);
+        rgba(66,245,167,.20);
+
+    color:
+        #ccefe0;
+
+    line-height:
+        1.7;
+
 }
 
-.query-result.show {
+.query-status.show {
 
-    display: block;
+    display:
+        block;
 
     animation:
-        resultAppear .5s ease;
+        resultAppear .4s ease;
+
+}
+
+.query-status strong {
+
+    display:
+        block;
+
+    color:
+        var(--green);
+
+    margin-bottom:
+        4px;
+
 }
 
 @keyframes resultAppear {
 
     from {
-        opacity: 0;
-        transform: translateY(10px);
+
+        opacity:
+            0;
+
+        transform:
+            translateY(10px);
+
     }
 
     to {
-        opacity: 1;
-        transform: translateY(0);
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
     }
-}
 
-.query-result strong {
-
-    color: var(--green);
-
-    display: block;
-
-    margin-bottom: 5px;
 }
 
 
 /* =========================================================
-   FUTURISTIC PROCESS
+   PROCESS
 ========================================================= */
 
 .process {
 
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         repeat(4,1fr);
 
-    gap: 20px;
+    gap:
+        20px;
 
-    position: relative;
 }
 
 .process-step {
 
-    text-align: center;
+    text-align:
+        center;
 
-    padding: 25px;
+    padding:
+        25px;
 
-    border-radius: 16px;
+    border-radius:
+        16px;
 
     background:
         rgba(255,255,255,.025);
@@ -773,23 +1181,31 @@ section {
     border:
         1px solid
         rgba(255,255,255,.06);
+
 }
 
 .process-number {
 
-    width: 45px;
+    width:
+        45px;
 
-    height: 45px;
+    height:
+        45px;
 
-    margin: auto auto 15px;
+    margin:
+        auto auto 15px;
 
-    border-radius: 50%;
+    border-radius:
+        50%;
 
-    display: grid;
+    display:
+        grid;
 
-    place-items: center;
+    place-items:
+        center;
 
-    color: var(--cyan);
+    color:
+        var(--cyan);
 
     border:
         1px solid
@@ -798,13 +1214,17 @@ section {
     box-shadow:
         0 0 20px
         rgba(56,200,255,.08);
+
 }
 
 .process-step p {
 
-    color: var(--muted);
+    color:
+        var(--muted);
 
-    font-size: 13px;
+    font-size:
+        13px;
+
 }
 
 
@@ -814,101 +1234,144 @@ section {
 
 .contact {
 
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         1fr 1fr;
 
-    gap: 25px;
+    gap:
+        25px;
+
 }
 
 .contact-panel {
 
-    padding: 35px;
+    padding:
+        35px;
 
-    border-radius: 20px;
+    border-radius:
+        20px;
 
     background:
         rgba(10,23,39,.75);
 
     border:
-        1px solid var(--border);
+        1px solid
+        var(--border);
+
 }
 
 .contact-item {
 
-    padding: 18px 0;
+    padding:
+        18px 0;
 
     border-bottom:
         1px solid
         rgba(255,255,255,.06);
+
+}
+
+.contact-item:last-child {
+
+    border-bottom:
+        none;
+
 }
 
 .contact-item small {
 
-    display: block;
+    display:
+        block;
 
-    color: #6f8499;
+    color:
+        #6f8499;
 
-    margin-bottom: 5px;
+    margin-bottom:
+        5px;
+
 }
 
 .contact-item a {
 
-    color: white;
+    color:
+        white;
 
-    text-decoration: none;
+    text-decoration:
+        none;
+
+    word-break:
+        break-word;
+
 }
 
 .contact-item a:hover {
 
-    color: var(--cyan);
+    color:
+        var(--cyan);
+
 }
 
 
 /* =========================================================
-   MODAL
+   SOLUTION MODAL
 ========================================================= */
 
 .modal {
 
-    position: fixed;
+    position:
+        fixed;
 
-    inset: 0;
+    inset:
+        0;
 
-    z-index: 500;
+    z-index:
+        500;
 
-    display: none;
+    display:
+        none;
 
-    place-items: center;
+    place-items:
+        center;
 
-    padding: 20px;
+    padding:
+        20px;
 
     background:
         rgba(0,0,0,.75);
 
     backdrop-filter:
         blur(12px);
+
 }
 
 .modal.show {
 
-    display: grid;
+    display:
+        grid;
+
 }
 
 .modal-content {
 
-    width: min(700px, 100%);
+    width:
+        min(700px,100%);
 
-    max-height: 90vh;
+    max-height:
+        90vh;
 
-    overflow: auto;
+    overflow:
+        auto;
 
-    padding: 35px;
+    padding:
+        35px;
 
-    border-radius: 24px;
+    border-radius:
+        24px;
 
     background:
+
         linear-gradient(
             145deg,
             #0b1b2e,
@@ -925,43 +1388,120 @@ section {
 
     animation:
         modalOpen .3s ease;
+
 }
 
 @keyframes modalOpen {
 
     from {
-        transform: scale(.92);
-        opacity: 0;
+
+        transform:
+            scale(.92);
+
+        opacity:
+            0;
+
     }
 
     to {
-        transform: scale(1);
-        opacity: 1;
+
+        transform:
+            scale(1);
+
+        opacity:
+            1;
+
     }
+
 }
 
 .modal-top {
 
-    display: flex;
+    display:
+        flex;
 
-    justify-content: space-between;
+    justify-content:
+        space-between;
 
-    align-items: flex-start;
+    align-items:
+        flex-start;
 
-    margin-bottom: 25px;
+    margin-bottom:
+        25px;
+
 }
 
 .close {
 
-    border: none;
+    border:
+        none;
 
-    background: transparent;
+    background:
+        transparent;
 
-    color: white;
+    color:
+        white;
 
-    font-size: 28px;
+    font-size:
+        28px;
 
-    cursor: pointer;
+    cursor:
+        pointer;
+
+}
+
+.close:hover {
+
+    color:
+        var(--cyan);
+
+}
+
+.modal-animation {
+
+    font-size:
+        70px;
+
+    text-align:
+        center;
+
+    padding:
+        35px;
+
+    margin-bottom:
+        25px;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(56,200,255,.04);
+
+    border:
+        1px solid
+        rgba(56,200,255,.10);
+
+    animation:
+        modalPulse 2s ease-in-out infinite;
+
+}
+
+@keyframes modalPulse {
+
+    0%,100% {
+
+        transform:
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            scale(1.05);
+
+    }
+
 }
 
 
@@ -971,15 +1511,19 @@ section {
 
 footer {
 
-    text-align: center;
+    text-align:
+        center;
 
-    padding: 35px 6%;
+    padding:
+        35px 6%;
 
-    color: #61758b;
+    color:
+        #61758b;
 
     border-top:
         1px solid
         rgba(255,255,255,.06);
+
 }
 
 
@@ -987,77 +1531,97 @@ footer {
    MOBILE
 ========================================================= */
 
-@media(max-width: 1000px) {
+@media(max-width:1000px) {
 
     .solutions {
 
         grid-template-columns:
             repeat(2,1fr);
+
     }
 
     .process {
 
         grid-template-columns:
             repeat(2,1fr);
+
     }
 
 }
 
-@media(max-width: 700px) {
+@media(max-width:700px) {
 
     header {
 
-        padding: 15px 5%;
+        padding:
+            15px 5%;
+
     }
 
     .nav-links {
 
-        display: none;
+        display:
+            none;
+
     }
 
     .hero {
 
-        padding-top: 140px;
+        padding-top:
+            140px;
+
     }
 
     .hero h1 {
 
-        letter-spacing: -2px;
+        letter-spacing:
+            -2px;
+
     }
 
     .hero p {
 
-        font-size: 16px;
+        font-size:
+            16px;
+
     }
 
     .solutions {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
+
     }
 
     .process {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
+
     }
 
     .contact {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
+
     }
 
     .query-box {
 
-        padding: 20px;
+        padding:
+            22px;
+
     }
 
-    .query-input {
+    .button.secondary {
 
-        flex-direction: column;
-    }
+        margin-left:
+            0;
 
-    .query-input .button {
+        margin-top:
+            10px;
 
-        width: 100%;
     }
 
 }
@@ -1067,28 +1631,36 @@ footer {
    ACCESSIBILITY
 ========================================================= */
 
-@media(prefers-reduced-motion: reduce) {
+@media(prefers-reduced-motion:reduce) {
 
     *,
     *::before,
     *::after {
 
-        animation-duration: .01ms !important;
+        animation-duration:
+            .01ms !important;
 
-        animation-iteration-count: 1 !important;
+        animation-iteration-count:
+            1 !important;
 
-        scroll-behavior: auto !important;
+        scroll-behavior:
+            auto !important;
 
     }
 
 }
 
 </style>
+
 </head>
 
 
 <body>
 
+
+<!-- ======================================================
+     BACKGROUND
+====================================================== -->
 
 <canvas id="network"></canvas>
 
@@ -1103,19 +1675,33 @@ footer {
 
 <nav>
 
-<a class="logo" href="#home">
-    AK <span>Sentinel Studios</span>
+<a
+class="logo"
+href="#home"
+>
+
+AK <span>Sentinel Studios</span>
+
 </a>
+
 
 <div class="nav-links">
 
-<a href="#solutions">Solutions</a>
+<a href="#solutions">
+Solutions
+</a>
 
-<a href="#query">Your Problem</a>
+<a href="#query">
+Your Problem
+</a>
 
-<a href="#process">Process</a>
+<a href="#process">
+Process
+</a>
 
-<a href="#contact">Contact</a>
+<a href="#contact">
+Contact
+</a>
 
 </div>
 
@@ -1131,9 +1717,13 @@ footer {
      HERO
 ====================================================== -->
 
-<section class="hero" id="home">
+<section
+class="hero"
+id="home"
+>
 
 <div class="hero-content">
+
 
 <div class="status">
 
@@ -1169,7 +1759,8 @@ organizational problems.
 
 <a
 href="#query"
-class="button">
+class="button"
+>
 
 Describe Your Problem
 
@@ -1178,11 +1769,13 @@ Describe Your Problem
 
 <a
 href="#solutions"
-class="button secondary">
+class="button secondary"
+>
 
 Explore Solutions
 
 </a>
+
 
 </div>
 
@@ -1193,15 +1786,23 @@ Explore Solutions
      SOLUTIONS
 ====================================================== -->
 
-<section id="solutions">
+<section
+id="solutions"
+>
 
 <div class="section-label">
+
 Our Technology
+
 </div>
 
+
 <h2 class="section-title">
+
 Explore Our Solutions
+
 </h2>
+
 
 <p class="section-description">
 
@@ -1218,15 +1819,18 @@ AK Sentinel Studios works on.
 
 <div
 class="solution"
-onclick="openSolution('cyber')">
+onclick="openSolution('cyber')"
+>
 
 <div class="solution-icon">
 🛡️
 </div>
 
+
 <h3>
 Cybersecurity
 </h3>
+
 
 <p>
 
@@ -1236,33 +1840,6 @@ infrastructure.
 
 </p>
 
-<div class="learn">
-Explore → 
-</div>
-
-</div>
-
-
-<!-- AI -->
-
-<div
-class="solution"
-onclick="openSolution('ai')">
-
-<div class="solution-icon">
-🤖
-</div>
-
-<h3>
-Artificial Intelligence
-</h3>
-
-<p>
-
-AI research, intelligent automation, analytics
-and AI-enabled software solutions.
-
-</p>
 
 <div class="learn">
 Explore →
@@ -1271,19 +1848,54 @@ Explore →
 </div>
 
 
-<!-- SOFTWARE -->
+<!-- ARTIFICIAL INTELLIGENCE -->
 
 <div
 class="solution"
-onclick="openSolution('software')">
+onclick="openSolution('ai')"
+>
+
+<div class="solution-icon">
+🤖
+</div>
+
+
+<h3>
+Artificial Intelligence
+</h3>
+
+
+<p>
+
+AI research, intelligent automation, analytics
+and AI-enabled software solutions.
+
+</p>
+
+
+<div class="learn">
+Explore →
+</div>
+
+</div>
+
+
+<!-- CUSTOM SOFTWARE -->
+
+<div
+class="solution"
+onclick="openSolution('software')"
+>
 
 <div class="solution-icon">
 💻
 </div>
 
+
 <h3>
 Custom Software
 </h3>
+
 
 <p>
 
@@ -1291,6 +1903,7 @@ Software designed around specific business
 processes, workflows and organizational needs.
 
 </p>
+
 
 <div class="learn">
 Explore →
@@ -1303,15 +1916,18 @@ Explore →
 
 <div
 class="solution"
-onclick="openSolution('cloud')">
+onclick="openSolution('cloud')"
+>
 
 <div class="solution-icon">
 ☁️
 </div>
 
+
 <h3>
 Cloud & SaaS
 </h3>
+
 
 <p>
 
@@ -1319,6 +1935,7 @@ Cloud-based applications, SaaS concepts and
 secure digital infrastructure solutions.
 
 </p>
+
 
 <div class="learn">
 Explore →
@@ -1333,62 +1950,310 @@ Explore →
 
 
 <!-- ======================================================
-     QUERY
+     REAL REQUIREMENT FORM
 ====================================================== -->
 
-<section id="query">
+<section
+id="query"
+>
 
 <div class="section-label">
-Intelligent Requirement Interface
+
+Requirement Intake
+
 </div>
 
+
 <h2 class="section-title">
+
 Have a problem?
+
+<span class="gradient">
 Tell us.
+</span>
+
 </h2>
+
 
 <p class="section-description">
 
-You don't need to know exactly what software you need.
-Simply describe the problem and we'll identify the
-relevant technology area.
+You don't need to know exactly what software
+you need. Describe your problem in your own
+words. Your enquiry will be sent directly to
+the AK Sentinel Studios team for review.
 
 </p>
 
 
 <div class="query-box">
 
-<div class="query-input">
+
+<div class="query-intro">
+
+<strong>
+Your requirement goes directly to our team.
+</strong>
+
+<br>
+
+Submit your name, email, organization and
+requirement below. We will receive the
+information by email.
+
+</div>
+
+
+<!-- ==================================================
+     REAL FORM
+
+     IMPORTANT:
+     This form submits to FormSubmit.
+
+     Destination:
+     akshats618@gmail.com
+
+     No PHP or personal server is required.
+================================================== -->
+
+<form
+id="requirementForm"
+
+class="query-form"
+
+action="https://formsubmit.co/akshats618@gmail.com"
+
+method="POST"
+>
+
+
+<!-- EMAIL SUBJECT -->
 
 <input
-id="problemInput"
+type="hidden"
+
+name="_subject"
+
+value="New Requirement Query - AK Sentinel Studios"
+>
+
+
+<!-- FORM TEMPLATE -->
+
+<input
+type="hidden"
+
+name="_template"
+
+value="table"
+>
+
+
+<!-- REPLY-TO -->
+
+<input
+type="hidden"
+
+name="_replyto"
+
+id="replyTo"
+>
+
+
+<!-- SPAM PROTECTION -->
+
+<input
 type="text"
-placeholder="Example: My employee management is difficult...">
+
+name="_honey"
+
+tabindex="-1"
+
+autocomplete="off"
+
+style="display:none;"
+>
+
+
+<!-- NAME -->
+
+<div class="form-group">
+
+
+<label
+for="customerName"
+>
+
+Your Name
+
+</label>
+
+
+<input
+id="customerName"
+
+class="form-control"
+
+type="text"
+
+name="name"
+
+placeholder="Enter your name"
+
+autocomplete="name"
+
+required
+>
+
+
+</div>
+
+
+<!-- EMAIL -->
+
+<div class="form-group">
+
+
+<label
+for="customerEmail"
+>
+
+Email Address
+
+</label>
+
+
+<input
+id="customerEmail"
+
+class="form-control"
+
+type="email"
+
+name="email"
+
+placeholder="you@example.com"
+
+autocomplete="email"
+
+required
+>
+
+
+</div>
+
+
+<!-- COMPANY -->
+
+<div class="form-group">
+
+
+<label
+for="company"
+>
+
+Company / Organization
+
+<span>
+(Optional)
+</span>
+
+</label>
+
+
+<input
+id="company"
+
+class="form-control"
+
+type="text"
+
+name="company"
+
+placeholder="Company or organization name"
+
+autocomplete="organization"
+>
+
+
+</div>
+
+
+<!-- REQUIREMENT -->
+
+<div class="form-group">
+
+
+<label
+for="requirement"
+>
+
+Tell us about your problem or requirement
+
+</label>
+
+
+<textarea
+id="requirement"
+
+class="form-control"
+
+name="message"
+
+placeholder="Example: We need an HRMS for approximately 100 employees with attendance, leave management and payroll..."
+
+required
+></textarea>
+
+
+</div>
+
+
+<!-- SUBMIT -->
 
 <button
-class="button"
-onclick="processQuery()">
+type="submit"
 
-Analyze
+class="button query-submit"
+
+id="submitButton"
+>
+
+Send Requirement
 
 </button>
 
+
+<div class="form-note">
+
+By submitting this form, your information
+will be sent to AK Sentinel Studios for
+review and response. This webpage itself
+does not store your enquiry.
+
 </div>
 
+
+</form>
+
+
+<!-- STATUS MESSAGE -->
 
 <div
-id="queryResult"
-class="query-result">
+id="queryStatus"
 
-<strong id="queryTitle">
-Requirement received
+class="query-status"
+>
+
+<strong>
+Requirement submitted.
 </strong>
 
-<span id="queryText">
-
-</span>
+Your requirement has been sent to
+AK Sentinel Studios. Thank you for
+contacting us.
 
 </div>
+
 
 </div>
 
@@ -1399,14 +2264,21 @@ Requirement received
      PROCESS
 ====================================================== -->
 
-<section id="process">
+<section
+id="process"
+>
 
 <div class="section-label">
+
 How We Work
+
 </div>
 
+
 <h2 class="section-title">
+
 From problem to possibility.
+
 </h2>
 
 
@@ -1419,9 +2291,11 @@ From problem to possibility.
 01
 </div>
 
+
 <h3>
 Understand
 </h3>
+
 
 <p>
 
@@ -1439,9 +2313,11 @@ requirements and desired outcome.
 02
 </div>
 
+
 <h3>
 Analyze
 </h3>
+
 
 <p>
 
@@ -1459,9 +2335,11 @@ and development approaches.
 03
 </div>
 
+
 <h3>
 Develop
 </h3>
+
 
 <p>
 
@@ -1479,9 +2357,11 @@ solution can then be designed.
 04
 </div>
 
+
 <h3>
 Deliver
 </h3>
+
 
 <p>
 
@@ -1502,14 +2382,21 @@ tested and prepared for deployment.
      CONTACT
 ====================================================== -->
 
-<section id="contact">
+<section
+id="contact"
+>
 
 <div class="section-label">
+
 Direct Contact
+
 </div>
 
+
 <h2 class="section-title">
+
 Let's build something.
+
 </h2>
 
 
@@ -1518,20 +2405,29 @@ Let's build something.
 
 <div class="contact-panel">
 
+
 <h3>
+
 AK Sentinel Studios
+
 </h3>
 
+
 <p
-style="color:var(--muted);
-margin-top:15px;">
+style="
+color:var(--muted);
+margin-top:15px;
+line-height:1.8;
+"
+>
 
 For product enquiries, support,
 custom software requirements,
-collaboration or technology discussions,
-contact us directly.
+collaboration or technology
+discussions, contact us directly.
 
 </p>
+
 
 </div>
 
@@ -1544,6 +2440,7 @@ contact us directly.
 <small>
 Contact Person
 </small>
+
 
 <strong>
 Akshat Singh
@@ -1558,7 +2455,10 @@ Akshat Singh
 Email
 </small>
 
-<a href="mailto:akshats618@gmail.com">
+
+<a
+href="mailto:akshats618@gmail.com"
+>
 
 akshats618@gmail.com
 
@@ -1573,7 +2473,10 @@ akshats618@gmail.com
 Phone / Support
 </small>
 
-<a href="tel:+917317616999">
+
+<a
+href="tel:+917317616999"
+>
 
 +91 731 761 6999
 
@@ -1592,6 +2495,10 @@ Phone / Support
 </main>
 
 
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
 <footer>
 
 © 2026 AK Sentinel Studios.
@@ -1606,8 +2513,11 @@ All rights reserved.
 
 <div
 id="solutionModal"
+
 class="modal"
-onclick="closeOutside(event)">
+
+onclick="closeOutside(event)"
+>
 
 
 <div class="modal-content">
@@ -1615,65 +2525,78 @@ onclick="closeOutside(event)">
 
 <div class="modal-top">
 
+
 <div>
 
+
 <div
-id="modalLabel"
-class="section-label">
+class="section-label"
+>
 
 Technology
 
 </div>
 
-<h2 id="modalTitle">
+
+<h2
+id="modalTitle"
+>
 
 </h2>
+
 
 </div>
 
 
 <button
 class="close"
-onclick="closeSolution()">
+
+type="button"
+
+aria-label="Close"
+
+onclick="closeSolution()"
+>
 
 ×
 
 </button>
+
 
 </div>
 
 
 <p
 id="modalDescription"
+
 style="
 color:var(--muted);
 line-height:1.8;
 margin-bottom:30px;
-">
+"
+>
 
 </p>
 
 
 <div
 id="modalAnimation"
-style="
-font-size:70px;
-text-align:center;
-padding:35px;
-margin-bottom:25px;
-border-radius:20px;
-background:rgba(56,200,255,.04);
-">
+
+class="modal-animation"
+>
 
 </div>
 
 
 <a
-href="#contact"
-class="button"
-onclick="closeSolution()">
+href="#query"
 
-Discuss This Solution
+class="button"
+
+onclick="closeSolution()"
+>
+
+Discuss Your Requirement
 
 </a>
 
@@ -1690,12 +2613,15 @@ Discuss This Solution
 ========================================================= */
 
 const canvas =
-document.getElementById("network");
+document.getElementById(
+    "network"
+);
 
 const ctx =
 canvas.getContext("2d");
 
 let nodes = [];
+
 
 function resizeCanvas() {
 
@@ -1707,27 +2633,35 @@ function resizeCanvas() {
 
     nodes = [];
 
+
     const count =
         window.innerWidth < 700
         ? 35
         : 70;
 
-    for(let i=0;i<count;i++) {
+
+    for(
+        let i = 0;
+        i < count;
+        i++
+    ) {
 
         nodes.push({
 
-            x: Math.random() *
-                canvas.width,
+            x:
+                Math.random()
+                * canvas.width,
 
-            y: Math.random() *
-                canvas.height,
+            y:
+                Math.random()
+                * canvas.height,
 
             vx:
-                (Math.random()-.5)
+                (Math.random() - .5)
                 * .25,
 
             vy:
-                (Math.random()-.5)
+                (Math.random() - .5)
                 * .25
 
         });
@@ -1736,7 +2670,9 @@ function resizeCanvas() {
 
 }
 
+
 resizeCanvas();
+
 
 window.addEventListener(
     "resize",
@@ -1753,24 +2689,38 @@ function animateNetwork() {
         canvas.height
     );
 
-    for(const node of nodes) {
+
+    for(
+        const node of nodes
+    ) {
 
         node.x += node.vx;
+
         node.y += node.vy;
+
 
         if(
             node.x < 0 ||
             node.x > canvas.width
-        )
+        ) {
+
             node.vx *= -1;
+
+        }
+
 
         if(
             node.y < 0 ||
             node.y > canvas.height
-        )
+        ) {
+
             node.vy *= -1;
 
+        }
+
+
         ctx.beginPath();
+
 
         ctx.arc(
             node.x,
@@ -1780,8 +2730,10 @@ function animateNetwork() {
             Math.PI * 2
         );
 
+
         ctx.fillStyle =
             "rgba(56,200,255,.65)";
+
 
         ctx.fill();
 
@@ -1789,14 +2741,14 @@ function animateNetwork() {
 
 
     for(
-        let i=0;
-        i<nodes.length;
+        let i = 0;
+        i < nodes.length;
         i++
     ) {
 
         for(
-            let j=i+1;
-            j<nodes.length;
+            let j = i + 1;
+            j < nodes.length;
             j++
         ) {
 
@@ -1804,35 +2756,46 @@ function animateNetwork() {
                 nodes[i].x -
                 nodes[j].x;
 
+
             const dy =
                 nodes[i].y -
                 nodes[j].y;
 
+
             const distance =
                 Math.sqrt(
-                    dx*dx +
-                    dy*dy
+                    dx * dx +
+                    dy * dy
                 );
 
-            if(distance < 140) {
+
+            if(
+                distance < 140
+            ) {
 
                 ctx.beginPath();
+
 
                 ctx.moveTo(
                     nodes[i].x,
                     nodes[i].y
                 );
 
+
                 ctx.lineTo(
                     nodes[j].x,
                     nodes[j].y
                 );
 
+
                 ctx.strokeStyle =
-                    `rgba(56,200,255,${
-                        .10 -
-                        distance / 1600
-                    })`;
+                    `rgba(
+                        56,
+                        200,
+                        255,
+                        ${.10 - distance / 1600}
+                    )`;
+
 
                 ctx.stroke();
 
@@ -1842,11 +2805,13 @@ function animateNetwork() {
 
     }
 
+
     requestAnimationFrame(
         animateNetwork
     );
 
 }
+
 
 animateNetwork();
 
@@ -1857,16 +2822,17 @@ animateNetwork();
 
 const solutions = {
 
+
     cyber: {
 
         title:
-        "Cybersecurity",
+            "Cybersecurity",
 
         description:
-        "AK Sentinel Studios explores security-focused technologies for protecting applications, systems, networks, data and digital infrastructure. Solutions may include security engineering, monitoring, assessment and defensive technologies.",
+            "AK Sentinel Studios explores security-focused technologies for protecting applications, systems, networks, data and digital infrastructure. Solutions may include security engineering, monitoring, assessment and defensive technologies.",
 
         animation:
-        "🛡️"
+            "🛡️"
 
     },
 
@@ -1874,13 +2840,13 @@ const solutions = {
     ai: {
 
         title:
-        "Artificial Intelligence",
+            "Artificial Intelligence",
 
         description:
-        "Our AI focus includes intelligent systems, automation, analytics and AI-enabled software. The objective is to use artificial intelligence where it can provide practical value to an organization.",
+            "Our AI focus includes intelligent systems, automation, analytics and AI-enabled software. The objective is to use artificial intelligence where it can provide practical value to an organization.",
 
         animation:
-        "🤖"
+            "🤖"
 
     },
 
@@ -1888,13 +2854,13 @@ const solutions = {
     software: {
 
         title:
-        "Custom Software",
+            "Custom Software",
 
         description:
-        "Organizations often have workflows that cannot be properly addressed by generic software. AK Sentinel Studios can explore custom software concepts designed around specific requirements and operational processes.",
+            "Organizations often have workflows that cannot be properly addressed by generic software. AK Sentinel Studios can explore custom software concepts designed around specific requirements and operational processes.",
 
         animation:
-        "💻"
+            "💻"
 
     },
 
@@ -1902,13 +2868,13 @@ const solutions = {
     cloud: {
 
         title:
-        "Cloud & SaaS",
+            "Cloud & SaaS",
 
         description:
-        "Cloud and SaaS solutions can provide scalable access to software and organizational capabilities. We explore secure cloud-based architectures and software delivery models.",
+            "Cloud and SaaS solutions can provide scalable access to software and organizational capabilities. We explore secure cloud-based architectures and software delivery models.",
 
         animation:
-        "☁️"
+            "☁️"
 
     }
 
@@ -1924,25 +2890,30 @@ function openSolution(type) {
     const solution =
         solutions[type];
 
+
     document
         .getElementById("modalTitle")
         .textContent =
         solution.title;
+
 
     document
         .getElementById("modalDescription")
         .textContent =
         solution.description;
 
+
     document
         .getElementById("modalAnimation")
         .textContent =
         solution.animation;
 
+
     document
         .getElementById("solutionModal")
         .classList
         .add("show");
+
 
     document.body.style.overflow =
         "hidden";
@@ -1960,6 +2931,7 @@ function closeSolution() {
         .getElementById("solutionModal")
         .classList
         .remove("show");
+
 
     document.body.style.overflow =
         "";
@@ -1985,7 +2957,9 @@ document.addEventListener(
     "keydown",
     function(event) {
 
-        if(event.key === "Escape") {
+        if(
+            event.key === "Escape"
+        ) {
 
             closeSolution();
 
@@ -1996,127 +2970,86 @@ document.addEventListener(
 
 
 /* =========================================================
-   QUERY ANALYZER
+   REAL FORM SUBMISSION
 ========================================================= */
 
-function processQuery() {
-
-    const input =
-        document
-        .getElementById("problemInput")
-        .value
-        .trim();
-
-    if(!input) {
-
-        return;
-
-    }
+const requirementForm =
+document.getElementById(
+    "requirementForm"
+);
 
 
-    let category =
-        "technology requirement";
+const customerEmail =
+document.getElementById(
+    "customerEmail"
+);
 
 
-    let response =
-        "Your requirement has been received. AK Sentinel Studios will review the problem and determine an appropriate technology or software approach.";
+const replyTo =
+document.getElementById(
+    "replyTo"
+);
 
 
-    /* CYBERSECURITY */
-
-    if(
-        /hack|hacked|cyber|security|breach|phishing|malware|ransom|attack/i
-        .test(input)
-    ) {
-
-        category =
-            "Cybersecurity requirement";
-
-        response =
-            "Your requirement appears to involve cybersecurity. We can evaluate the security problem and determine an appropriate defensive technology or software approach.";
-
-    }
+const submitButton =
+document.getElementById(
+    "submitButton"
+);
 
 
-    /* HRMS */
-
-    else if(
-        /hrms|employee|human resource|payroll|attendance|staff|employee management/i
-        .test(input)
-    ) {
-
-        category =
-            "Custom HR / Business Software";
-
-        response =
-            "Your requirement appears suitable for custom business software. We can explore an HRMS or employee-management solution around your organization's workflow.";
-
-    }
+const queryStatus =
+document.getElementById(
+    "queryStatus"
+);
 
 
-    /* AI */
+/*
+    Before the form is submitted, copy the visitor's
+    email into FormSubmit's reply-to field.
 
-    else if(
-        /ai|artificial intelligence|automation|chatbot|machine learning|llm/i
-        .test(input)
-    ) {
+    This means that when you receive the enquiry,
+    you can reply to the visitor directly.
+*/
 
-        category =
-            "AI / Automation requirement";
-
-        response =
-            "Your requirement appears suitable for an AI or automation approach. We can evaluate where intelligent systems could provide value.";
-
-    }
+requirementForm.addEventListener(
+    "submit",
+    function() {
 
 
-    /* SOFTWARE */
+        replyTo.value =
+            customerEmail.value;
 
-    else if(
-        /software|application|app|website|dashboard|saas|system/i
-        .test(input)
-    ) {
 
-        category =
-            "Custom Software requirement";
+        submitButton.disabled =
+            true;
 
-        response =
-            "Your requirement appears suitable for custom software development. We can explore the required features, workflow and architecture.";
+
+        submitButton.textContent =
+            "Sending Requirement...";
+
+
+        queryStatus.classList
+            .add("show");
+
+
+        queryStatus.innerHTML = `
+
+            <strong>
+                Sending requirement...
+            </strong>
+
+            Your enquiry is being
+            submitted to AK Sentinel Studios.
+            Please wait.
+
+        `;
 
     }
-
-
-    document
-        .getElementById("queryTitle")
-        .textContent =
-        category;
-
-
-    document
-        .getElementById("queryText")
-        .textContent =
-        response;
-
-
-    const result =
-        document
-        .getElementById("queryResult");
-
-
-    result.classList.remove("show");
-
-
-    /* restart animation */
-
-    void result.offsetWidth;
-
-
-    result.classList.add("show");
-
-}
-
+);
 
 </script>
 
+
 </body>
+
 </html>
