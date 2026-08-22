@@ -31,7 +31,6 @@ content="#030712"
 :root {
 
     --bg: #030712;
-
     --bg2: #07111f;
 
     --panel:
@@ -52,6 +51,9 @@ content="#030712"
     --green:
         #42f5a7;
 
+    --red:
+        #ff5577;
+
     --text:
         #f4f8ff;
 
@@ -62,17 +64,21 @@ content="#030712"
 
 * {
 
-    box-sizing: border-box;
+    box-sizing:
+        border-box;
 
-    margin: 0;
+    margin:
+        0;
 
-    padding: 0;
+    padding:
+        0;
 
 }
 
 html {
 
-    scroll-behavior: smooth;
+    scroll-behavior:
+        smooth;
 
 }
 
@@ -82,7 +88,7 @@ body {
 
         radial-gradient(
             circle at 50% -10%,
-            rgba(34, 125, 255, 0.18),
+            rgba(34,125,255,.18),
             transparent 35%
         ),
 
@@ -139,7 +145,7 @@ textarea {
         -5;
 
     opacity:
-        0.55;
+        .55;
 
 }
 
@@ -160,13 +166,13 @@ textarea {
     background-image:
 
         linear-gradient(
-            rgba(56, 200, 255, 0.035) 1px,
+            rgba(56,200,255,.035) 1px,
             transparent 1px
         ),
 
         linear-gradient(
             90deg,
-            rgba(56, 200, 255, 0.035) 1px,
+            rgba(56,200,255,.035) 1px,
             transparent 1px
         );
 
@@ -188,17 +194,13 @@ textarea {
 @keyframes gridMove {
 
     from {
-
         transform:
             translateY(0);
-
     }
 
     to {
-
         transform:
             translateY(50px);
-
     }
 
 }
@@ -229,14 +231,14 @@ header {
         18px 5%;
 
     background:
-        rgba(3, 7, 18, 0.72);
+        rgba(3,7,18,.72);
 
     backdrop-filter:
         blur(18px);
 
     border-bottom:
         1px solid
-        rgba(255,255,255,0.06);
+        rgba(255,255,255,.06);
 
 }
 
@@ -446,7 +448,7 @@ nav {
 .hero h1 {
 
     font-size:
-        clamp(45px, 8vw, 90px);
+        clamp(45px,8vw,90px);
 
     line-height:
         1;
@@ -530,7 +532,7 @@ nav {
 
 
 /* =========================================================
-   BUTTON
+   BUTTONS
 ========================================================= */
 
 .button {
@@ -657,7 +659,7 @@ section {
 .section-title {
 
     font-size:
-        clamp(32px, 5vw, 55px);
+        clamp(32px,5vw,55px);
 
     margin-bottom:
         18px;
@@ -682,7 +684,7 @@ section {
 
 
 /* =========================================================
-   SOLUTION CARDS
+   SOLUTIONS
 ========================================================= */
 
 .solutions {
@@ -691,7 +693,7 @@ section {
         grid;
 
     grid-template-columns:
-        repeat(4, 1fr);
+        repeat(4,1fr);
 
     gap:
         18px;
@@ -731,6 +733,7 @@ section {
         pointer;
 
     transition:
+
         transform .4s,
         border-color .4s,
         box-shadow .4s;
@@ -892,7 +895,7 @@ section {
 
 
 /* =========================================================
-   REAL REQUIREMENT / QUERY FORM
+   REAL REQUIREMENT FORM
 ========================================================= */
 
 .query-box {
@@ -1014,6 +1017,7 @@ section {
         15px;
 
     transition:
+
         border-color .25s,
         box-shadow .25s;
 
@@ -1032,6 +1036,7 @@ section {
         var(--cyan);
 
     box-shadow:
+
         0 0 0 3px
         rgba(56,200,255,.08);
 
@@ -1084,16 +1089,6 @@ textarea.form-control {
     border-radius:
         14px;
 
-    background:
-        rgba(66,245,167,.05);
-
-    border:
-        1px solid
-        rgba(66,245,167,.20);
-
-    color:
-        #ccefe0;
-
     line-height:
         1.7;
 
@@ -1109,16 +1104,55 @@ textarea.form-control {
 
 }
 
+.query-status.success {
+
+    background:
+        rgba(66,245,167,.05);
+
+    border:
+        1px solid
+        rgba(66,245,167,.20);
+
+    color:
+        #ccefe0;
+
+}
+
+.query-status.error {
+
+    background:
+        rgba(255,85,119,.05);
+
+    border:
+        1px solid
+        rgba(255,85,119,.25);
+
+    color:
+        #ffd6df;
+
+}
+
 .query-status strong {
 
     display:
         block;
 
+    margin-bottom:
+        4px;
+
+}
+
+.query-status.success strong {
+
     color:
         var(--green);
 
-    margin-bottom:
-        4px;
+}
+
+.query-status.error strong {
+
+    color:
+        var(--red);
 
 }
 
@@ -1315,7 +1349,7 @@ textarea.form-control {
 
 
 /* =========================================================
-   SOLUTION MODAL
+   MODAL
 ========================================================= */
 
 .modal {
@@ -1848,7 +1882,7 @@ Explore →
 </div>
 
 
-<!-- ARTIFICIAL INTELLIGENCE -->
+<!-- AI -->
 
 <div
 class="solution"
@@ -1950,7 +1984,7 @@ Explore →
 
 
 <!-- ======================================================
-     REAL REQUIREMENT FORM
+     REAL EMAIL REQUIREMENT SECTION
 ====================================================== -->
 
 <section
@@ -1979,8 +2013,8 @@ Tell us.
 
 You don't need to know exactly what software
 you need. Describe your problem in your own
-words. Your enquiry will be sent directly to
-the AK Sentinel Studios team for review.
+words. Your enquiry will be automatically
+sent to the AK Sentinel Studios team.
 
 </p>
 
@@ -1991,93 +2025,46 @@ the AK Sentinel Studios team for review.
 <div class="query-intro">
 
 <strong>
-Your requirement goes directly to our team.
+Tell us what you need.
 </strong>
 
 <br>
 
-Submit your name, email, organization and
-requirement below. We will receive the
-information by email.
+Your enquiry is sent directly to our team
+for review. You do not need to open an
+email application or manually send anything.
 
 </div>
 
 
 <!-- ==================================================
-     REAL FORM
+     AJAX FORMSUBMIT FORM
 
      IMPORTANT:
-     This form submits to FormSubmit.
+     The visitor stays on this website.
 
-     Destination:
+     The information is sent automatically to:
+
      akshats618@gmail.com
 
-     No PHP or personal server is required.
+     No PHP.
+     No personal backend server.
+     No database required.
+
+     FormSubmit documentation:
+     https://formsubmit.co/ajax-documentation
 ================================================== -->
 
 <form
 id="requirementForm"
 
 class="query-form"
-
-action="https://formsubmit.co/akshats618@gmail.com"
-
-method="POST"
->
-
-
-<!-- EMAIL SUBJECT -->
-
-<input
-type="hidden"
-
-name="_subject"
-
-value="New Requirement Query - AK Sentinel Studios"
->
-
-
-<!-- FORM TEMPLATE -->
-
-<input
-type="hidden"
-
-name="_template"
-
-value="table"
->
-
-
-<!-- REPLY-TO -->
-
-<input
-type="hidden"
-
-name="_replyto"
-
-id="replyTo"
->
-
-
-<!-- SPAM PROTECTION -->
-
-<input
-type="text"
-
-name="_honey"
-
-tabindex="-1"
-
-autocomplete="off"
-
-style="display:none;"
 >
 
 
 <!-- NAME -->
 
 <div class="form-group">
-
 
 <label
 for="customerName"
@@ -2104,14 +2091,12 @@ autocomplete="name"
 required
 >
 
-
 </div>
 
 
 <!-- EMAIL -->
 
 <div class="form-group">
-
 
 <label
 for="customerEmail"
@@ -2138,14 +2123,12 @@ autocomplete="email"
 required
 >
 
-
 </div>
 
 
 <!-- COMPANY -->
 
 <div class="form-group">
-
 
 <label
 for="company"
@@ -2174,14 +2157,12 @@ placeholder="Company or organization name"
 autocomplete="organization"
 >
 
-
 </div>
 
 
 <!-- REQUIREMENT -->
 
 <div class="form-group">
-
 
 <label
 for="requirement"
@@ -2204,8 +2185,44 @@ placeholder="Example: We need an HRMS for approximately 100 employees with atten
 required
 ></textarea>
 
-
 </div>
+
+
+<!-- HIDDEN EMAIL SUBJECT -->
+
+<input
+type="hidden"
+
+name="_subject"
+
+value="New Requirement Query - AK Sentinel Studios"
+>
+
+
+<!-- EMAIL TEMPLATE -->
+
+<input
+type="hidden"
+
+name="_template"
+
+value="table"
+>
+
+
+<!-- HONEYPOT ANTI-SPAM FIELD -->
+
+<input
+type="text"
+
+name="_honey"
+
+tabindex="-1"
+
+autocomplete="off"
+
+style="display:none;"
+>
 
 
 <!-- SUBMIT -->
@@ -2225,10 +2242,10 @@ Send Requirement
 
 <div class="form-note">
 
-By submitting this form, your information
-will be sent to AK Sentinel Studios for
-review and response. This webpage itself
-does not store your enquiry.
+By submitting this form, the information
+you provide is transmitted to AK Sentinel
+Studios for the purpose of reviewing and
+responding to your enquiry.
 
 </div>
 
@@ -2236,7 +2253,9 @@ does not store your enquiry.
 </form>
 
 
-<!-- STATUS MESSAGE -->
+<!-- ==================================================
+     STATUS
+================================================== -->
 
 <div
 id="queryStatus"
@@ -2244,13 +2263,16 @@ id="queryStatus"
 class="query-status"
 >
 
-<strong>
-Requirement submitted.
+<strong
+id="statusTitle"
+>
 </strong>
 
-Your requirement has been sent to
-AK Sentinel Studios. Thank you for
-contacting us.
+
+<span
+id="statusMessage"
+>
+</span>
 
 </div>
 
@@ -2280,6 +2302,15 @@ How We Work
 From problem to possibility.
 
 </h2>
+
+
+<p class="section-description">
+
+We start with the problem rather than
+forcing every organization into the same
+software solution.
+
+</p>
 
 
 <div class="process">
@@ -2528,10 +2559,7 @@ onclick="closeOutside(event)"
 
 <div>
 
-
-<div
-class="section-label"
->
+<div class="section-label">
 
 Technology
 
@@ -2541,9 +2569,7 @@ Technology
 <h2
 id="modalTitle"
 >
-
 </h2>
-
 
 </div>
 
@@ -2575,7 +2601,6 @@ line-height:1.8;
 margin-bottom:30px;
 "
 >
-
 </p>
 
 
@@ -2584,7 +2609,6 @@ id="modalAnimation"
 
 class="modal-animation"
 >
-
 </div>
 
 
@@ -2882,7 +2906,7 @@ const solutions = {
 
 
 /* =========================================================
-   OPEN SOLUTION
+   SOLUTION MODAL
 ========================================================= */
 
 function openSolution(type) {
@@ -2920,10 +2944,6 @@ function openSolution(type) {
 
 }
 
-
-/* =========================================================
-   CLOSE SOLUTION
-========================================================= */
 
 function closeSolution() {
 
@@ -2970,24 +2990,40 @@ document.addEventListener(
 
 
 /* =========================================================
-   REAL FORM SUBMISSION
+   REAL AJAX EMAIL FORM
 ========================================================= */
+
+/*
+
+    THIS IS THE IMPORTANT PART.
+
+    The form does NOT use:
+
+        mailto:
+
+    The visitor does NOT open an email app.
+
+    The visitor does NOT click your Gmail address.
+
+    The visitor simply clicks:
+
+        SEND REQUIREMENT
+
+    JavaScript sends the form data to:
+
+        FormSubmit AJAX endpoint
+
+    Which forwards the submission to:
+
+        akshats618@gmail.com
+
+    The visitor remains on this website.
+
+*/
 
 const requirementForm =
 document.getElementById(
     "requirementForm"
-);
-
-
-const customerEmail =
-document.getElementById(
-    "customerEmail"
-);
-
-
-const replyTo =
-document.getElementById(
-    "replyTo"
 );
 
 
@@ -3003,46 +3039,223 @@ document.getElementById(
 );
 
 
-/*
-    Before the form is submitted, copy the visitor's
-    email into FormSubmit's reply-to field.
+const statusTitle =
+document.getElementById(
+    "statusTitle"
+);
 
-    This means that when you receive the enquiry,
-    you can reply to the visitor directly.
-*/
+
+const statusMessage =
+document.getElementById(
+    "statusMessage"
+);
+
 
 requirementForm.addEventListener(
     "submit",
-    function() {
+    async function(event) {
 
 
-        replyTo.value =
-            customerEmail.value;
+        /*
+            Stop the browser from navigating
+            away from the website.
+        */
 
+        event.preventDefault();
+
+
+        /*
+            Collect the form data.
+        */
+
+        const formData =
+            new FormData(
+                requirementForm
+            );
+
+
+        /*
+            Add the subject to the
+            email received by you.
+        */
+
+        formData.set(
+            "_subject",
+            "New Requirement Query - AK Sentinel Studios"
+        );
+
+
+        /*
+            Show sending state.
+        */
 
         submitButton.disabled =
             true;
-
 
         submitButton.textContent =
             "Sending Requirement...";
 
 
-        queryStatus.classList
-            .add("show");
+        queryStatus.className =
+            "query-status show success";
 
 
-        queryStatus.innerHTML = `
+        statusTitle.textContent =
+            "Submitting requirement...";
 
-            <strong>
-                Sending requirement...
-            </strong>
 
-            Your enquiry is being
-            submitted to AK Sentinel Studios.
-            Please wait.
+        statusMessage.textContent =
+            "Your information is being securely transmitted to AK Sentinel Studios.";
 
-        `;
+
+        try {
+
+
+            /*
+                Convert FormData into an object
+                that can be sent as JSON.
+            */
+
+            const data = {};
+
+
+            formData.forEach(
+                function(value,key) {
+
+                    data[key] =
+                        value;
+
+                }
+            );
+
+
+            /*
+                REAL FORMSUBMIT AJAX REQUEST
+
+                No page redirect.
+
+                No email application.
+
+                No PHP.
+
+                No personal backend.
+            */
+
+            const response =
+                await fetch(
+                    "https://formsubmit.co/ajax/akshats618@gmail.com",
+                    {
+
+                        method:
+                            "POST",
+
+                        headers: {
+
+                            "Content-Type":
+                                "application/json",
+
+                            "Accept":
+                                "application/json"
+
+                        },
+
+                        body:
+                            JSON.stringify(data)
+
+                    }
+                );
+
+
+            /*
+                Convert FormSubmit response
+                into JSON.
+            */
+
+            const result =
+                await response.json();
+
+
+            /*
+                Check whether FormSubmit
+                accepted the submission.
+            */
+
+            if(
+                response.ok &&
+                result.success !== false
+            ) {
+
+
+                queryStatus.className =
+                    "query-status show success";
+
+
+                statusTitle.textContent =
+                    "✓ Requirement received";
+
+
+                statusMessage.textContent =
+                    "Your requirement has been sent to AK Sentinel Studios. Thank you for contacting us. Our team will review your enquiry.";
+
+
+                /*
+                    Clear the form after
+                    successful submission.
+                */
+
+                requirementForm.reset();
+
+
+                submitButton.disabled =
+                    false;
+
+
+                submitButton.textContent =
+                    "Send Another Requirement";
+
+
+            }
+
+            else {
+
+                throw new Error(
+                    "Submission was not accepted."
+                );
+
+            }
+
+
+        }
+
+        catch(error) {
+
+
+            console.error(
+                "FormSubmit error:",
+                error
+            );
+
+
+            queryStatus.className =
+                "query-status show error";
+
+
+            statusTitle.textContent =
+                "Unable to send the requirement";
+
+
+            statusMessage.textContent =
+                "We could not submit your enquiry at this moment. Please try again or contact AK Sentinel Studios directly.";
+
+
+            submitButton.disabled =
+                false;
+
+
+            submitButton.textContent =
+                "Try Again";
+
+        }
 
     }
 );
